@@ -12,6 +12,8 @@
   // pets.push("monkey");
   // console.log(pets.indexOf("monkey"));
   // console.log(pets.indexOf("gorilla"));
+
+
   // var book = [
   // {
   //   title: "48 Laws of Power",
@@ -30,6 +32,7 @@
   // console.log(book[1].author)
   // console.log(book[0]["title"])
 
+
   // var i = 11
   // while (i > 0)
   //   i--,
@@ -45,6 +48,7 @@
   //   console.log(numbers[i]);
   // }
 
+
   // var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
   // var sum = 0;
   // for( var i = 0; i < numbers.length; i++ ){
@@ -53,6 +57,7 @@
   // console.log(sum)
   // var average = sum/numbers.length
   // console.log(average)
+
 
 // for (var i = 1; i < 101; i++) {
 //   if (i%3===0&&i%5===0){
@@ -66,19 +71,30 @@
 //   else 
 //     console.log(i)
 // }
-// Function Parameters...............
 
-function average(array) {
-  var total =  0;
-  for (var i=0; i<array.length; i++) {
-    total = total + array[i];
-  }
-  var average = total / array.length;
-  return average;
+
+// function average(array) {
+//   var total =  0;
+//   for (var i=0; i<array.length; i++) {
+//     total = total + array[i];
+//   }
+//   var average = total / array.length;
+//   return average;
+// }
+// var array = [ 1, 2, 3, 4, 5, 6];
+// console.log(average(array));
+
+var book =
+{
+  title: "48 Laws of Power",
+  author: "Robert Greene",
+  isbn: "0140280197",
+  yearOfPublication: 2000,
+  printDetails: function(){
+    console.log("This book entitled " + this.title + " was written by a well known author called " + this.author + ". It was published in " + this.yearOfPublication);
+  } 
 }
-var array = [ 1, 2, 3, 4, 5, 6];
-console.log(average(array));
-
+console.log(book.printDetails())
 
 
 </script>
